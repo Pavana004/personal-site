@@ -1,15 +1,10 @@
-import React,{useState} from 'react'
+import React from 'react'
 import logo from '../assests/logo.png'
 import '../header/navbar.css'
 
 const Navabar = () => {
 
-    const [activeLink, setActiveLink] = useState('home');
 
-    const handleSetActiveLink = (link) => {
-      setActiveLink(link);
-    };
-  
 
     return (
         <div className='navbar '>
