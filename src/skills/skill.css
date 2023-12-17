@@ -1,0 +1,157 @@
+.skillsContainer {
+
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(150, 9%, 4%);
+    position: relative;
+    padding: 0;
+    margin: auto;
+}
+
+.skillSmall {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(184, 4, 37);
+    cursor: pointer;
+    margin-left: 6%;
+    top: 35px;
+    position: absolute;
+    letter-spacing: 1px;
+
+}
+
+.emptyLine {
+
+    width: 50px;
+    height: 2px;
+    top: 13px;
+    position: absolute;
+    left: 110%;
+    background-color: rgb(184, 4, 37);
+}
+
+.skillHeading {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: absolute;
+    text-align: center;
+    top: 60px;
+    width: 100%;
+
+
+}
+
+.skillShowContainer {
+    z-index: 2;
+    width: 80%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 50px;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.eachSkillBox1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(184, 4, 37, 0.308);
+    border-radius: 10px;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: bold;
+
+}
+
+.eachSkillBox1 img {
+
+    margin: auto;
+}
+
+.slideTextAnimation {
+    z-index: 1;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 40%;
+    overflow: hidden;
+    margin: auto;
+
+
+}
+
+.slideText {
+    color: #ffffff09;
+    font-size: 50vh;
+    white-space: nowrap;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.extraDesgin {
+    background-color: rgba(184, 4, 37, 0.205);
+    width: 250px;
+    height: 80px;
+    text-align: center;
+
+}
+
+
+@media only screen and (min-width:320px)and (max-width:667px) {
+
+    .skillsContainer {
+        width: 100%;
+
+    }
+
+    .skillHeading {
+        font-size: 30px;
+        position: absolute;
+        top: 15%;
+    }
+
+    .extraDesgin {
+        width: 130px;
+        height: 80px;
+    }
+
+    .skillShowContainer {
+
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        position: absolute;
+        left: 0;
+        grid-gap: 15px;
+    }
+
+    .eachSkillBox1 {
+        width: 100px;
+        height: 87px;
+    }
+
+}
+
+@media only screen and (min-width:670px)and (max-width:990px){
+
+    
+  
+
+    .skillShowContainer{
+        grid-gap: 20px;
+    }
+
+}

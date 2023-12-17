@@ -1,0 +1,200 @@
+.portfolioContainer {
+
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(150, 9%, 4%);
+    position: relative;
+    padding: 0;
+    margin: auto;
+}
+
+.smallPortfolio {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(184, 4, 37);
+    cursor: pointer;
+    margin-left: 6%;
+    top: 35px;
+    position: absolute;
+    letter-spacing: 1px;
+}
+
+.emptyLine {
+
+    width: 50px;
+    height: 2px;
+    top: 13px;
+    position: absolute;
+    left: 110%;
+    background-color: rgb(184, 4, 37);
+}
+
+.titleContainer {
+    width: 100%;
+    height: 15%;
+    background-color: rgba(184, 4, 37, 0.151);
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: auto;
+}
+
+.Container {
+
+
+    position: absolute;
+    width: 100%;
+    height: 65%;
+    top: 30%;
+    padding: 20px;
+    text-align: center;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+
+.Container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.Container::-webkit-scrollbar-thumb {
+    background-color: rgb(184, 4, 37);
+    border-radius: 20px;
+}
+
+.Container::-webkit-scrollbar-track {
+    border-radius: 20px;
+    height: 30px;
+}
+
+
+.renderContainer {
+    width: 400px;
+    height: 200px;
+    background-color: black;
+    font-size: medium;
+    position: relative;
+    cursor: pointer;
+}
+
+.renderImg {
+    opacity: 0.5;
+    width: 400px; 
+    height: 200px; 
+    object-fit: cover;
+
+}
+
+.insideRenderContainer {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    top: 50%;
+    margin: auto;
+    padding: 5px;
+
+
+
+}
+
+.insideRenderContainer {
+    display: none;
+
+
+
+}
+
+.renderContainer:hover .insideRenderContainer {
+    display: block;
+    height: 200px;
+    margin: auto;
+    padding-top: 50px;
+    top: 0;
+
+}
+
+
+.insideRenderContainer button {
+    width: 100px;
+    height: 40px;
+    background-color: rgba(176, 0, 32, 1);
+    border: none;
+    border-radius: 5px;
+}
+
+.insideRenderContainer button a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: bold;
+
+}
+
+
+@media only screen and (min-width:320px)and (max-width:667px) {
+
+
+    .titleContainer {
+        font-size: 30px;
+        height: 70px;
+    }
+
+    .Container {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-gap: 10px;
+    }
+
+    .renderContainer {
+        height: 166px;
+    }
+
+     .renderImg {
+        width: 289px;
+        height: 151px;
+    }
+
+    .renderContainer:hover .insideRenderContainer {
+        display: block;
+        height: 166px;
+        margin: auto;
+        padding-top: 50px;
+        top: 0;
+    
+    }
+    .insideRenderContainer button {
+        display:none;
+    }
+    
+  
+
+}
+
+
+@media only screen and (min-width:670px)and (max-width:990px){
+
+    .titleContainer{
+        height: 100px;
+    }
+    .Container{
+        grid-gap: 40px;
+        grid-template-columns: auto;
+    }
+    .insideRenderContainer button {
+        display:none;
+    }
+
+}
