@@ -183,30 +183,30 @@
     }
 
     .name {
-        font-size: 20px;
+        font-size: 15px;
         position: absolute;
-        top: 20%;
+        top: 30%;
         left: 5%;
     }
 
     .country {
-        font-size: 30px;
+        font-size: 22px;
         position: absolute;
-        top: 34%;
+        top: 40%;
         left: 5%;
 
     }
 
     .professional {
 
-        font-size: 25px;
+        font-size: 22px;
         position: absolute;
-        top: 27%;
+        top: 35%;
         left: 5%;
     }
 
     .shortDes {
-        font-size: 15px;
+        font-size: 13px;
         position: absolute;
         top: 50%;
         left: 5%;

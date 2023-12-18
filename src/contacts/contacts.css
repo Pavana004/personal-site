@@ -215,7 +215,7 @@ textarea:focus {
 
     .contactDetails {
         width: 100%;
-        height: 425px;
+        height: 40%;
     }
 
     .contactDetails h1 {
@@ -228,6 +228,7 @@ textarea:focus {
         position: absolute;
         left: 20px;
         font-size: 15px;
+        top: 30%;
     }
 
     .contactDetails2 {
@@ -264,7 +265,7 @@ textarea:focus {
 
 }
 
-@media only screen and (min-width:670px)and (max-width:990px){
+@media only screen and (min-width:670px)and (max-width:990px) {
 
     .contactsContainer2 {
         display: flex;
@@ -283,6 +284,7 @@ textarea:focus {
 
     .contactIcon {
         left: 10%;
+        top: 30%;
     }
 
 
@@ -304,7 +306,7 @@ textarea:focus {
         top: 16%;
     }
 
-    .messageCon button{
+    .messageCon button {
         top: 100%;
         left: 45%;
     }
