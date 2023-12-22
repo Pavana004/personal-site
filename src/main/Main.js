@@ -23,7 +23,7 @@ const Main = () => {
             opacity: 1,
             transition: {
                 duration: 1,
-                delay:0.5,
+                delay: 0.25,
                 ease: easeInOut,
                 stiffness: 120,
                 staggerChildren: 0.1,
