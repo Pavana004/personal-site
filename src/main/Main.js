@@ -2,7 +2,7 @@ import React from 'react'
 import '../main/main.css'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { FaRegHandPointDown } from "react-icons/fa6";
-import { motion } from 'framer-motion'
+import { motion,easeInOut,spring} from 'framer-motion'
 
 const Main = () => {
 
@@ -23,6 +23,9 @@ const Main = () => {
             opacity: 1,
             transition: {
                 duration: 1,
+                delay:0.5,
+                ease: easeInOut,
+                stiffness: 120,
                 staggerChildren: 0.1,
             }
         },
