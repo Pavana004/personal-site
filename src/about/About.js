@@ -42,7 +42,7 @@ const About = () => {
                     <motion.h1 variants={textVariants} className='aboutNameCap'>About Me</motion.h1>
                     <motion.p variants={textVariants} className='aboutMePrap'>I design and develop services for customers specializing
                         creating stylish, modern websites, web application,
-                        web service and desinging new features from
+                        web service and designing new features from
                         ideation to production,implementation of wireframes
                         and design flows in my web application.I take into consideration the user experience while writing reusable
                         and efficient code,I passionately combine good design,
