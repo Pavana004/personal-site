@@ -4,7 +4,11 @@ import '../header/navbar.css'
 
 const Navabar = () => {
 
+    const [selectedItem, setSelectedItem] = useState(null);
 
+    const handleItemClick = (item) => {
+        setSelectedItem(item);
+    };
 
     return (
         <div className='navbar '>
@@ -12,7 +16,7 @@ const Navabar = () => {
                 <img className='logo' src={logo} alt='logo' />
             </div>
             <div className='list'>
-                 <ul ><a href='#home' >
+                <ul ><a href='#home' className={selectedItem === 'Home' ? 'selected' : ''} onClick={() => handleItemClick('Home')} >
                     Home
                 </a></ul>
                 <ul><a href='#about'>

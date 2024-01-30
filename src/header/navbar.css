@@ -71,6 +71,9 @@ ul:hover::after {
     transform: scale(1);
     color: rgba(176, 0, 32, 1);
 }
+.selected{
+    color: rgba(176, 0, 32, 1);
+}
 
 .logo {
     width: 70px;
