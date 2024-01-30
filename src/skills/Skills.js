@@ -74,6 +74,7 @@ const Skills = () => {
         animate: {
             x: '-220%',
             transition: {
+                ease: easeInOut,
                 repeat: Infinity,
                 repeatType: "mirror",
                 duration: 20,
