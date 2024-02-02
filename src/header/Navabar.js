@@ -1,41 +1,91 @@
-import React from 'react'
-import logo from '../assests/logo.png'
-import '../header/navbar.css'
+import React from "react";
+import logo from "../assests/logo.png";
+import { Link } from "react-scroll";
+import "../header/navbar.css";
 
 const Navabar = () => {
+  return (
+    <div className="navbar ">
+      <div className="imgdiv">
+        <img className="logo" src={logo} alt="logo" />
+      </div>
+      <div className="list">
+        <ul>
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            Home
+          </Link>
+        </ul>
+        <ul>
+          <Link
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            to="about"
+          >
+            About
+          </Link>
+        </ul>
+        <ul>
+          <Link
+            to="service"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            Service
+          </Link>
+        </ul>
+        <ul>
+          <Link
+            to="skills"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            Skills
+          </Link>
+        </ul>
+        <ul>
+          <Link
+            to="portfolio"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            Portfolio
+          </Link>
+        </ul>
 
+        <ul>
+          <Link
+            to="contact"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            Contact
+          </Link>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
-
-    return (
-        <div className='navbar '>
-            <div className='imgdiv'>
-                <img className='logo' src={logo} alt='logo' />
-            </div>
-            <div className='list'>
-                 <ul ><a href='#home' >
-                    Home
-                </a></ul>
-                <ul><a href='#about'>
-                    About
-                </a></ul>
-                <ul><a href='#service'>
-                    Service
-                </a></ul>
-                <ul><a href='#skills'>
-                    Skills
-                </a></ul>
-                <ul><a href='#portfolio'>
-                    Portfolio
-                </a></ul>
-
-                <ul><a href='#contact'>
-                    Contact
-                </a></ul>
-
-
-            </div>
-        </div>
-    )
-}
-
-export default Navabar
+export default Navabar;

@@ -228,7 +228,7 @@ textarea:focus {
         position: absolute;
         left: 20px;
         font-size: 15px;
-        top: 30%;
+        top: 47%;
     }
 
     .contactDetails2 {
@@ -237,10 +237,13 @@ textarea:focus {
 
     .footerDeg p {
         font-size: 11px;
+       
+        
     }
 
     .footerDeg h1 {
         font-size: 11px;
+       
     }
 
     form {

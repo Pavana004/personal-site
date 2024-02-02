@@ -1,285 +1,266 @@
 .main {
-    background-image: url('../assests/Wireframe1.png');
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 80% 0;
-    width: 100%;
-    height: 100vh;
-    margin-top: 3%;
-
-
+  background-image: url("../assests/Wireframe1.png");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 80% 0;
+  width: 100%;
+  height: 100vh;
+  margin-top: 3%;
 }
 
 .introName {
-    font-family: 'Poppins', sans-serif;
-    position: absolute;
-    height: fit-content;
-    width: 58%;
-    left: 10%;
-    top: 25%;
-
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  height: fit-content;
+  width: 58%;
+  left: 10%;
+  top: 25%;
 }
 
 .name {
-    font-size: 26px;
-    color: rgba(255, 255, 255, 1);
-    font-weight: bold;
-    letter-spacing: 3px;
+  font-size: 26px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
 .country {
-    font-size: 60px;
-    color: rgb(184, 4, 37);
-    font-weight: bold;
-    letter-spacing: 3px;
-
+  font-size: 60px;
+  color: rgb(184, 4, 37);
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
 .professional {
-
-    font-size: 60px;
-    color: rgba(255, 255, 255, 1);
-    font-weight: bold;
+  font-size: 60px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
 }
 
 .shortDes {
-    font-size: 16px;
-    color: rgba(255, 255, 255, 1);
-    letter-spacing: 1px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 1px;
 }
 
 .btn {
-    background-color: transparent;
-    border: 1px solid white;
-    color: rgba(255, 255, 255, 1);
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    width: 30%;
-    height: 60px;
-    letter-spacing: 1px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  width: 30%;
+  height: 60px;
+  letter-spacing: 1px;
 }
 
 .btn:hover {
-    background-color: rgba(176, 0, 32, 1);
-    color: rgba(255, 255, 255, 1);
+  background-color: rgba(176, 0, 32, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .bounce {
-    display: inline-block;
-    position: relative;
-    -moz-animation: bounce 0.5s infinite linear;
-    -o-animation: bounce 0.5s infinite linear;
-    -webkit-animation: bounce 0.5s infinite linear;
-    animation: bounce 0.5s infinite linear;
+  display: inline-block;
+  position: relative;
+  -moz-animation: bounce 0.5s infinite linear;
+  -o-animation: bounce 0.5s infinite linear;
+  -webkit-animation: bounce 0.5s infinite linear;
+  animation: bounce 0.5s infinite linear;
 }
 
 .FaRegHandPointDown {
-    font-size: 3em;
-    margin: 20px;
+  font-size: 3em;
+  margin: 20px;
 }
 
 @-webkit-keyframes bounce {
-    0% {
-        top: 0;
-    }
+  0% {
+    top: 0;
+  }
 
-    50% {
-        top: -0.2em;
-    }
+  50% {
+    top: -0.2em;
+  }
 
-    70% {
-        top: -0.3em;
-    }
+  70% {
+    top: -0.3em;
+  }
 
-    100% {
-        top: 0;
-    }
+  100% {
+    top: 0;
+  }
 }
 
 @-moz-keyframes bounce {
-    0% {
-        top: 0;
-    }
+  0% {
+    top: 0;
+  }
 
-    50% {
-        top: -0.2em;
-    }
+  50% {
+    top: -0.2em;
+  }
 
-    70% {
-        top: -0.3em;
-    }
+  70% {
+    top: -0.3em;
+  }
 
-    100% {
-        top: 0;
-    }
+  100% {
+    top: 0;
+  }
 }
 
 @-o-keyframes bounce {
-    0% {
-        top: 0;
-    }
+  0% {
+    top: 0;
+  }
 
-    50% {
-        top: -0.2em;
-    }
+  50% {
+    top: -0.2em;
+  }
 
-    70% {
-        top: -0.3em;
-    }
+  70% {
+    top: -0.3em;
+  }
 
-    100% {
-        top: 0;
-    }
+  100% {
+    top: 0;
+  }
 }
 
 @-ms-keyframes bounce {
-    0% {
-        top: 0;
-    }
+  0% {
+    top: 0;
+  }
 
-    50% {
-        top: -0.2em;
-    }
+  50% {
+    top: -0.2em;
+  }
 
-    70% {
-        top: -0.3em;
-    }
+  70% {
+    top: -0.3em;
+  }
 
-    100% {
-        top: 0;
-    }
+  100% {
+    top: 0;
+  }
 }
 
 @keyframes bounce {
-    0% {
-        top: 0;
-    }
+  0% {
+    top: 0;
+  }
 
-    50% {
-        top: -0.2em;
-    }
+  50% {
+    top: -0.2em;
+  }
 
-    70% {
-        top: -0.3em;
-    }
+  70% {
+    top: -0.3em;
+  }
 
-    100% {
-        top: 0;
-    }
+  100% {
+    top: 0;
+  }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+  .introName {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
+  .name {
+    font-size: 15px;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+  }
 
-@media only screen and (min-width:320px)and (max-width:667px) {
+  .country {
+    font-size: 22px;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+  }
 
+  .professional {
+    font-size: 22px;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+  }
 
-    .introName {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-    .name {
-        font-size: 15px;
-        position: absolute;
-        top: 30%;
-        left: 5%;
-    }
-
-    .country {
-        font-size: 22px;
-        position: absolute;
-        top: 40%;
-        left: 5%;
-
-    }
-
-    .professional {
-
-        font-size: 22px;
-        position: absolute;
-        top: 35%;
-        left: 5%;
-    }
-
-    .shortDes {
-        font-size: 13px;
-        position: absolute;
-        top: 50%;
-        left: 5%;
-    }
-    .btn {
-        position: absolute;
-        top: 70%;
-        left: 5%;
-        width: 200px;
-        font-size: small;
-    }
-    a{
-        position: absolute;
-        top: 70%;
-        left: 5%;
-    }
-
-
+  .shortDes {
+    font-size: 13px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+  }
+  .btn {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    width: 200px;
+    font-size: small;
+  }
+  a {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+  }
 }
 
+@media only screen and (min-width: 670px) and (max-width: 990px) {
+  .introName {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-@media only screen and (min-width:670px)and (max-width:990px){
-    
-    .introName {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
+  .name {
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
 
-    .name {
-        font-size: 40px;
-        position: absolute;
-        top: 20%;
-        left: 10%;
-    }
+  .country {
+    font-size: 50px;
+    position: absolute;
+    top: 34%;
+    left: 10%;
+  }
 
-    .country {
-        font-size: 50px;
-        position: absolute;
-        top: 34%;
-        left: 10%;
+  .professional {
+    font-size: 50px;
+    position: absolute;
+    top: 27%;
+    left: 10%;
+  }
 
-    }
-
-    .professional {
-
-        font-size: 50px;
-        position: absolute;
-        top: 27%;
-        left: 10%;
-    }
-
-    .shortDes {
-        font-size: 21px;
-        position: absolute;
-        top: 45%;
-        left: 10%;
-    }
-    .btn {
-        position: absolute;
-        top: 62%;
-        left: 10%;
-        width: 300px;
-        height: 95px;
-        font-size: large;
-    }
-    a{
-        position: absolute;
-        top: 62%;
-        left: 10%;
-    }
-    
-
+  .shortDes {
+    font-size: 21px;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+  }
+  .btn {
+    position: absolute;
+    top: 62%;
+    left: 10%;
+    width: 300px;
+    height: 95px;
+    font-size: large;
+  }
+  a {
+    position: absolute;
+    top: 62%;
+    left: 10%;
+  }
 }

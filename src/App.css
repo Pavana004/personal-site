@@ -1,38 +1,35 @@
-html{
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
-
 * {
-    top: 0;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   
+  top: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: black;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 
-::selection{
-    background-color:rgba(176, 0, 32, 1) ;
-    color: white;
+::selection {
+  background-color: rgba(176, 0, 32, 1);
+  color: white;
 }
 
-::-moz-selection{
-    background-color:rgba(176, 0, 32, 1);
-    color: white;
+::-moz-selection {
+  background-color: rgba(176, 0, 32, 1);
+  color: white;
 }
 
-::-webkit-scrollbar{
-    width: 10px;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-::-webkit-scrollbar-thumb{
-    background-color: lightgrey;
+::-webkit-scrollbar-thumb {
+  background-color: lightgrey;
 }
