@@ -45,7 +45,7 @@ const About = () => {
           </motion.h1>
           <motion.p variants={textVariants} className="aboutMePrap">
             I design and develop services for customers specializing creating
-            stylish, modern websites, web application, web service and designing
+            stylish, modern websites, web application, web service and desinging
             new features from ideation to production,implementation of
             wireframes and design flows in my web application.I take into
             consideration the user experience while writing reusable and

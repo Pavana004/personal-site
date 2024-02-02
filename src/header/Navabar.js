@@ -71,6 +71,7 @@ const Navabar = () => {
           </Link>
         </ul>
 
+
         <ul>
           <Link
             to="contact"
@@ -89,3 +90,4 @@ const Navabar = () => {
 };
 
 export default Navabar;
+
