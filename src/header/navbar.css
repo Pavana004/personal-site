@@ -13,6 +13,9 @@
   z-index: 9999;
   overflow: hidden;
   padding: 10px;
+}
+
+.navbar-bg {
   background-color: #0a0c0b;
 }
 

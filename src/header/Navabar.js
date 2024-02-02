@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assests/logo.png";
 import { Link } from "react-scroll";
 import "../header/navbar.css";
 
 const Navabar = () => {
+  const [color, setColor] = useState(false);
+
+  const changeColor = () => {
+    if (window.scrollY >= 15) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+  window.addEventListener("scroll", changeColor);
+
   return (
-    <div className="navbar ">
+    <div className={color ? "navbar  navbar-bg" : "navbar "}>
       <div className="imgdiv">
         <img className="logo" src={logo} alt="logo" />
       </div>
@@ -16,7 +27,6 @@ const Navabar = () => {
             to="home"
             spy={true}
             smooth={true}
-            offset={-100}
             duration={500}
           >
             Home
@@ -27,7 +37,6 @@ const Navabar = () => {
             activeClass="active"
             spy={true}
             smooth={true}
-            offset={-100}
             duration={500}
             to="about"
           >
@@ -40,7 +49,6 @@ const Navabar = () => {
             activeClass="active"
             spy={true}
             smooth={true}
-            offset={-100}
             duration={500}
           >
             Service
@@ -52,7 +60,6 @@ const Navabar = () => {
             activeClass="active"
             spy={true}
             smooth={true}
-            offset={-100}
             duration={500}
           >
             Skills
@@ -64,13 +71,11 @@ const Navabar = () => {
             activeClass="active"
             spy={true}
             smooth={true}
-            offset={-100}
             duration={500}
           >
             Portfolio
           </Link>
         </ul>
-
 
         <ul>
           <Link
@@ -78,7 +83,6 @@ const Navabar = () => {
             activeClass="active"
             spy={true}
             smooth={true}
-            offset={-100}
             duration={500}
           >
             Contact
@@ -90,4 +94,3 @@ const Navabar = () => {
 };
 
 export default Navabar;
-
