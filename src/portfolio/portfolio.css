@@ -1,200 +1,164 @@
 .portfolioContainer {
-
-    width: 100%;
-    height: 100vh;
-    background-color: hsl(150, 9%, 4%);
-    position: relative;
-    padding: 0;
-    margin: auto;
+  width: 100%;
+  height: max-content;
+  background-color: hsl(150, 9%, 4%);
+  position: relative;
+  padding: 0;
+  margin: auto;
 }
 
 .smallPortfolio {
-    font-size: 16px;
-    font-weight: bold;
-    color: rgb(184, 4, 37);
-    cursor: pointer;
-    margin-left: 6%;
-    top: 35px;
-    position: absolute;
-    letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(184, 4, 37);
+  cursor: pointer;
+  margin-left: 6%;
 }
 
-.emptyLine {
-
-    width: 50px;
-    height: 2px;
-    top: 13px;
-    position: absolute;
-    left: 110%;
-    background-color: rgb(184, 4, 37);
+.line {
+  width: 50px;
+  height: 2px;
+  background-color: rgb(184, 4, 37);
+  position: absolute;
+  left: 11.5%;
+  top: 1%;
 }
 
 .titleContainer {
-    width: 100%;
-    height: 15%;
-    background-color: rgba(184, 4, 37, 0.151);
-    position: absolute;
-    top: 10%;
-    text-align: center;
-    padding-top: 10px;
-    font-size: 50px;
-    letter-spacing: 1px;
-    font-weight: bold;
-    margin: auto;
+  width: 100%;
+  height: 15%;
+  background-color: rgba(184, 4, 37, 0.151);
+  text-align: center;
+  padding-top: 10px;
+  font-size: 50px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: auto;
 }
 
 .Container {
-
-
-    position: absolute;
-    width: 100%;
-    height: 65%;
-    top: 30%;
-    padding: 20px;
-    text-align: center;
-    gap: 30px;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: center;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scrollbar-width: thin;
+  width: 100%;
+  height: 100%;
+  top: 35%;
+  padding: 50px;
+  text-align: center;
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
 }
-
-.Container::-webkit-scrollbar {
-    width: 10px;
-}
-
-.Container::-webkit-scrollbar-thumb {
-    background-color: rgb(184, 4, 37);
-    border-radius: 20px;
-}
-
-.Container::-webkit-scrollbar-track {
-    border-radius: 20px;
-    height: 30px;
-}
-
 
 .renderContainer {
-    width: 400px;
-    height: 200px;
-    background-color: black;
-    font-size: medium;
-    position: relative;
-    cursor: pointer;
+  overflow: hidden;
+  position: relative;
 }
 
 .renderImg {
-    opacity: 0.5;
-    width: 400px; 
-    height: 200px; 
-    object-fit: cover;
-
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+  display: block;
+  opacity: 0.7;
+  transition: transform 0.5s;
 }
 
 .insideRenderContainer {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.87);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 400px;
-    height: 100px;
-    top: 50%;
-    margin: auto;
-    padding: 5px;
-
-
-
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.911), rgb(107, 1, 20));
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  transition: height 0.5s;
+  object-fit: cover;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
 }
 
-.insideRenderContainer {
-    display: none;
+.insideRenderContainer h5 {
+  font-size: 16px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  color: lightgray;
+}
+.insideRenderContainer p {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  color: lightgray;
+}
+.insideRenderContainer a {
+  margin-top: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  line-height: 60px;
+  font-size: 18px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
 
-
-
+.renderContainer:hover .renderImg {
+  transform: scale(0.5);
 }
 
 .renderContainer:hover .insideRenderContainer {
+  height: 100%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+  .titleContainer {
+    font-size: 30px;
+    height: 70px;
+  }
+
+  .Container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 10px;
+  }
+
+  .renderContainer {
+    height: 166px;
+  }
+
+  .renderImg {
+    width: 289px;
+    height: 151px;
+  }
+
+  .renderContainer:hover .insideRenderContainer {
     display: block;
-    height: 200px;
+    height: 166px;
     margin: auto;
     padding-top: 50px;
     top: 0;
-
+  }
+  .insideRenderContainer button {
+    display: none;
+  }
 }
 
-
-.insideRenderContainer button {
-    width: 100px;
-    height: 40px;
-    background-color: rgba(176, 0, 32, 1);
-    border: none;
-    border-radius: 5px;
-}
-
-.insideRenderContainer button a {
-    text-decoration: none;
-    color: white;
-    font-size: 13px;
-    letter-spacing: 1px;
-    font-weight: bold;
-
-}
-
-
-@media only screen and (min-width:320px)and (max-width:667px) {
-
-
-    .titleContainer {
-        font-size: 30px;
-        height: 70px;
-    }
-
-    .Container {
-        display: grid;
-        grid-template-columns: repeat(1, auto);
-        grid-gap: 10px;
-    }
-
-    .renderContainer {
-        height: 166px;
-    }
-
-     .renderImg {
-        width: 289px;
-        height: 151px;
-    }
-
-    .renderContainer:hover .insideRenderContainer {
-        display: block;
-        height: 166px;
-        margin: auto;
-        padding-top: 50px;
-        top: 0;
-    
-    }
-    .insideRenderContainer button {
-        display:none;
-    }
-    
-  
-
-}
-
-
-@media only screen and (min-width:670px)and (max-width:990px){
-
-    .titleContainer{
-        height: 100px;
-    }
-    .Container{
-        grid-gap: 40px;
-        grid-template-columns: auto;
-    }
-    .insideRenderContainer button {
-        display:none;
-    }
-
+@media only screen and (min-width: 670px) and (max-width: 990px) {
+  .titleContainer {
+    height: 100px;
+  }
+  .Container {
+    grid-gap: 40px;
+    grid-template-columns: auto;
+  }
+  .insideRenderContainer button {
+    display: none;
+  }
 }

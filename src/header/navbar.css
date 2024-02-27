@@ -16,7 +16,7 @@
 }
 
 .navbar-bg {
-  background-color: #0a0c0b;
+  background-color: hsl(150, 9%, 4%);
 }
 
 .list {
@@ -80,13 +80,13 @@ ul:hover::after {
   width: 70px;
   height: fit-content;
   cursor: pointer;
-  margin-left: 20px;
+  margin-left: 13%;
 }
 
 .imgdiv {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 20%;
   height: 100%;
 }

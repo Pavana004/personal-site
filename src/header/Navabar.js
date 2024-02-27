@@ -25,6 +25,7 @@ const Navabar = () => {
           <Link
             activeClass="active"
             to="home"
+            offset={-100}
             spy={true}
             smooth={true}
             duration={500}
@@ -35,6 +36,7 @@ const Navabar = () => {
         <ul>
           <Link
             activeClass="active"
+            offset={-100}
             spy={true}
             smooth={true}
             duration={500}
@@ -47,6 +49,7 @@ const Navabar = () => {
           <Link
             to="service"
             activeClass="active"
+            offset={-100}
             spy={true}
             smooth={true}
             duration={500}
@@ -58,6 +61,7 @@ const Navabar = () => {
           <Link
             to="skills"
             activeClass="active"
+            offset={-100}
             spy={true}
             smooth={true}
             duration={500}
@@ -69,6 +73,7 @@ const Navabar = () => {
           <Link
             to="portfolio"
             activeClass="active"
+            offset={-100}
             spy={true}
             smooth={true}
             duration={500}
@@ -81,6 +86,7 @@ const Navabar = () => {
           <Link
             to="contact"
             activeClass="active"
+            offset={-100}
             spy={true}
             smooth={true}
             duration={500}
