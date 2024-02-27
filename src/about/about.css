@@ -73,6 +73,7 @@
     left: 10%;
     top: 72%;
     font-weight: bolder;
+    color: rgba(176, 0, 32, 1);
 }
 
 .info {
@@ -86,7 +87,7 @@
     gap: 20px;
     position: absolute;
     top: 80%;
-    left: 9%;
+    left: 8%;
     letter-spacing: 1px;
     font-size: 14px;
     font-weight: bolder;
@@ -117,7 +118,7 @@
 
 .heroProfession {
     font-weight: bold;
-    color: rgb(184, 4, 37);
+    color: rgba(176, 0, 32, 1);
     font-size: 30px;
 
 }

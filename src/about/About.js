@@ -26,7 +26,7 @@ const About = () => {
 
   return (
     <div id="about" className="about">
-      <motion.p variants={textVariants} className="smallAboutMe">
+      <motion.p variants={textVariants} className="smallAboutMe" >
         About Me{" "}
         <motion.span>
           <motion.div variants={textVariants} className="empty"></motion.div>
