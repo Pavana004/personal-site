@@ -82,12 +82,11 @@
   font-family: "Poppins", sans-serif;
 }
 
-.insideRenderContainer h5 {
+.insideRenderContainer h4 {
   font-size: 16px;
   font-weight: bolder;
   margin-bottom: 20px;
   letter-spacing: 1px;
-  color: lightgray;
 }
 .insideRenderContainer p {
   font-size: 13px;
@@ -123,6 +122,33 @@
     height: 70px;
   }
 
+  .smallPortfolio {
+    padding-top: 40px;
+  }
+  .line {
+    left: 25%;
+    top: 52px;
+  }
+  .insideRenderContainer h4 {
+    font-size: 10px;
+  }
+
+  .insideRenderContainer p {
+    font-size: 7px;
+  }
+
+  .insideRenderContainer a {
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    top: 58%;
+  }
+
   .Container {
     display: grid;
     grid-template-columns: repeat(1, auto);
@@ -137,17 +163,6 @@
     width: 289px;
     height: 151px;
   }
-
-  .renderContainer:hover .insideRenderContainer {
-    display: block;
-    height: 166px;
-    margin: auto;
-    padding-top: 50px;
-    top: 0;
-  }
-  .insideRenderContainer button {
-    display: none;
-  }
 }
 
 @media only screen and (min-width: 670px) and (max-width: 990px) {
@@ -158,7 +173,27 @@
     grid-gap: 40px;
     grid-template-columns: auto;
   }
-  .insideRenderContainer button {
-    display: none;
+  .line {
+    left: 15%;
+    top: 14px;
+  }
+  .insideRenderContainer h4 {
+    font-size: 30px;
+  }
+
+  .insideRenderContainer p {
+    font-size: 13px;
+  }
+
+  .insideRenderContainer a {
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    top: 58%;
   }
 }
