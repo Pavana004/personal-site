@@ -3,6 +3,7 @@ import "../main/main.css";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaRegHandPointDown } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import SmallNavbar from "../smallnavbar/SmallNavbar";
 
 const Main = () => {
   const [text] = useTypewriter({
@@ -68,6 +69,7 @@ const Main = () => {
           </motion.button>
         </a>
       </motion.div>
+      <SmallNavbar />
     </div>
   );
 };
