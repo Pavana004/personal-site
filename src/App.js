@@ -1,5 +1,5 @@
 import React from "react";
-import './App.css';
+import "./App.css";
 import Navabar from "./header/Navabar";
 import Main from "./main/Main";
 import About from "./about/About";
@@ -8,11 +8,9 @@ import Skills from "./skills/Skills";
 import Portfolio from "./portfolio/Portfolio";
 import Contacts from "./contacts/Contacts";
 import Cursor from "./cursor/Cursor";
-
-
+import Copyrigth from "./Copyrigth";
 
 function App() {
-
   return (
     <>
       <Cursor />
@@ -23,6 +21,7 @@ function App() {
       <Skills />
       <Portfolio />
       <Contacts />
+      <Copyrigth />
     </>
   );
 }
