@@ -12,21 +12,27 @@ const SmallNavbar = () => {
     <div className="SmallNavbar">
       <a href="#home" className="eachDiv">
         <FaHome />
+        <p>Home</p>
       </a>
       <a href="#about" className="eachDiv">
         <BiSolidUserDetail />
+        <p>About</p>
       </a>
       <a href="#service" className="eachDiv">
         <MdDesignServices />
+        <p>Service</p>
       </a>
       <a href="#skills" className="eachDiv">
         <HiDesktopComputer />
+        <p>Skills</p>
       </a>
       <a href="#portfolio" className="eachDiv">
         <GoProject />
+        <p>Portfolio</p>
       </a>
       <a href="#contact" className="eachDiv">
         <MdContacts />
+        <p>Contact</p>
       </a>
     </div>
   );
