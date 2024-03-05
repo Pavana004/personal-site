@@ -10,6 +10,7 @@ import map from "../assests/map.jpg";
 import dash from "../assests/dash.png";
 import chatbot from "../assests/chatbot.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import eco from "../assests/eco.png";
 
 const data = [
   {
@@ -82,6 +83,15 @@ const data = [
       "This Chatbot used automated way to communicate with student and then submit there data,while using this application ",
     link: "https://chatbot-task.netlify.app",
     image: chatbot,
+  },
+  {
+    id: 9,
+    title: "Ecommerce Application",
+    type: "Web Application",
+    description:
+      "Here i develop ecommerce web application,and I use to MERN stack and Redux for develop this app",
+    link: "https://logoipsumcal.netlify.app",
+    image: eco,
   },
 ];
 
