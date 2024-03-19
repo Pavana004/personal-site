@@ -38,7 +38,7 @@ const Service = () => {
                 className='serviceContainer'>I provide wide range of web based services like below.</motion.h1>
             <motion.div className='boxContainer'>
                 <motion.div
-                    whileHover={{ backgroundColor: 'rgb(184, 4, 37)', }}
+                    whileHover={{ backgroundColor: 'rgba(184, 4, 37, 0.151)', }}
                     className='box1'
                     variants={BoxVariants}
                     initial='initial'
@@ -52,7 +52,7 @@ const Service = () => {
                     </motion.div>
                 </motion.div>
                 <motion.div
-                    whileHover={{ backgroundColor: 'rgb(184, 4, 37)', }}
+                    whileHover={{ backgroundColor: 'rgba(184, 4, 37, 0.151)', }}
                     className='box2'
                     variants={BoxVariants}
                     initial='initial'
@@ -66,7 +66,7 @@ const Service = () => {
                     </motion.div>
                 </motion.div>
                 <motion.div
-                    whileHover={{ backgroundColor: 'rgb(184, 4, 37)', }}
+                    whileHover={{ backgroundColor: 'rgba(184, 4, 37, 0.151)', }}
                     className='box3'
                     variants={BoxVariants}
                     initial='initial'
