@@ -57,7 +57,7 @@
 
 .btn:hover {
   border: 1px solid rgba(176, 0, 32, 1);
-  color: rgba(255, 255, 255, 1);
+  color: rgba(176, 0, 32, 1);
 }
 
 .bounce {
