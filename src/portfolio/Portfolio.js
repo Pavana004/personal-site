@@ -11,6 +11,7 @@ import dash from "../assests/dash.png";
 import chatbot from "../assests/chatbot.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import eco from "../assests/eco.png";
+import dashboard from "../assests/dashboard.png";
 
 const data = [
   {
@@ -92,6 +93,15 @@ const data = [
       "Here i develop ecommerce web application,and I use to MERN stack and Redux for develop this app",
     link: "https://logoipsumcal.netlify.app",
     image: eco,
+  },
+  {
+    id: 10,
+    title: "Dashboard Application",
+    type: "Web Application",
+    description:
+      "Here i develop Dashboard web application",
+    link: "https://flourishing-gumption-8b4bc2.netlify.app/",
+    image: dashboard,
   },
 ];
 
