@@ -68,15 +68,6 @@ const data = [
     image: wallet,
   },
   {
-    id: 7,
-    title: "User Dashboard",
-    type: "Web Application",
-    description:
-      "Here I develop,user dashboard using third party Api,user can access personal information and location,working info etc... ",
-    link: "https://glowing-palmier-8f5cca.netlify.app",
-    image: dash,
-  },
-  {
     id: 8,
     title: "ChatBot",
     type: "Web Application",
