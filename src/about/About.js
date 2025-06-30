@@ -102,7 +102,7 @@ const About = () => {
             <motion.a
               className="btn"
               variants={textVariants}
-              href="https://drive.google.com/file/d/1DBVcvbJJEd4hd1ANVzRsHt-20lZdc78h/view?usp=sharing"
+              href="https://drive.google.com/file/d/1wATOYP22bX1rlysPYShkETIn1WUGiq_6/view?usp=sharing"
               target="_blank"
               rel="norefferer"
             >
