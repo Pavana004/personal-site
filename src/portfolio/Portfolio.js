@@ -12,6 +12,7 @@ import chatbot from "../assests/chatbot.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import eco from "../assests/eco.png";
 import dashboard from "../assests/dashboard.png";
+import live from "../assests/Live.png";
 
 const data = [
   {
@@ -94,6 +95,16 @@ const data = [
     link: "https://flourishing-gumption-8b4bc2.netlify.app/",
     image: dashboard,
   },
+    {
+    id: 11,
+    title: "Fleet Traking Dashboard Application",
+    type: "Web Application",
+    description:
+      "Here i develop Fleet Traking Dashboard Live vehicle Simulation web application",
+    link: "https://fleet-tracking-task-for-mapup.vercel.app/",
+    image: live,
+  },
+
 ];
 
 const Portfolio = () => {
