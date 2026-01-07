@@ -13,8 +13,18 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import eco from "../assests/eco.png";
 import dashboard from "../assests/dashboard.png";
 import live from "../assests/Live.png";
+import bhb from "../assests/bhb.png";
 
 const data = [
+  {
+    id: 0,
+    title: "bhb",
+    type: "Web Landing Pages",
+    description:
+      "BHB is a startup by myself, delivering modern web solutions designed to help businesses grow digitally",
+    link: "https://business-ncvh.vercel.app/",
+    image: bhb,
+  },
   {
     id: 1,
     title: "Multiverse",
