@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Code, Zap, Globe, Lightbulb } from "lucide-react";
+import ShinyText from "./ui/ShinyText";
+
 
 const About = () => {
   const highlights = [
@@ -38,9 +40,13 @@ const About = () => {
           >
             {/* Left column - Bio */}
             <div>
-              <span className="text-primary font-medium text-sm tracking-wider uppercase">
-                About Me
-              </span>
+              <ShinyText 
+               color="#b00020"
+               shineColor="#f58a8a"
+               text="About Me"
+               className="text-primary font-medium text-sm tracking-wider uppercase"
+              />
+             
               <h2 className="text-3xl md:text-4xl font-display font-bold mt-4 mb-6">
                 Passionate Developer,
                 <span className="text-gradient block">Endless Curiosity</span>

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ShinyText from "./ui/ShinyText";
 
 const Skills = () => {
   const skillCategories = [
@@ -20,6 +21,7 @@ const Skills = () => {
         { name: "Express.js", level: 60 },
         { name: "REST APIs", level: 60 },
         { name: "Mongoose", level: 50 },
+        { name: "LangChain", level: 30 },
        
       
       ],
@@ -54,9 +56,13 @@ const Skills = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-medium text-sm tracking-wider uppercase">
-            Technical Skills
-          </span>
+           <ShinyText 
+               color="#b00020"
+               shineColor="#f58a8a"
+               text="Technical Skills"
+               className="text-primary font-medium text-sm tracking-wider uppercase"
+              />
+         
           <h2 className="text-3xl md:text-4xl font-display font-bold mt-4">
             My Tech Stack
           </h2>

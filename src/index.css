@@ -190,6 +190,10 @@
     );
     background-size: 24px 24px;
   }
+  .shiny-text {
+  display: inline-block;
+}
+
 }
 
 @layer utilities {

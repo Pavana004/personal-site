@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import ShinyText from "./ui/ShinyText";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -42,9 +43,13 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-medium text-sm tracking-wider uppercase">
-            Get In Touch
-          </span>
+            <ShinyText 
+               color="#b00020"
+               shineColor="#f58a8a"
+               text="Get In Touch"
+               className="text-primary font-medium text-sm tracking-wider uppercase"
+              />
+         
           <h2 className="text-3xl md:text-4xl font-display font-bold mt-4">
             Let's Work Together
           </h2>

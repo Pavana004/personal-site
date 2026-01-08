@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ShinyText from "./ui/ShinyText";
 
 const Projects = () => {
   const projects = [
     {
-      title: "BHB - Business Help Buddy",
+      title: "BHB -startup website",
       description:
       "BHB is a startup by myself, delivering modern web solutions designed to help businesses grow digitally",
       tech: ["Next.js", "TypeScript", "Tailwind CSS"],
@@ -76,9 +77,13 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-medium text-sm tracking-wider uppercase">
-            Portfolio
-          </span>
+             <ShinyText 
+               color="#b00020"
+               shineColor="#f58a8a"
+               text=" Portfolio"
+               className="text-primary font-medium text-sm tracking-wider uppercase"
+              />
+         
           <h2 className="text-3xl md:text-4xl font-display font-bold mt-4">
             Featured Projects
           </h2>
