@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 import ShinyText from "./ui/ShinyText";
 
 const Projects = () => {
@@ -18,7 +18,7 @@ const Projects = () => {
     {
       title: "Multiverse",
       description:
-      "OTT Platform here you can access different type of field like Movie,Music,Videos,Books.This project made by MERN stack.",
+        "OTT Platform here you can access different type of field like Movie,Music,Videos,Books.This project made by MERN stack.",
       tech: ["React", "Node.js", "Express", "MongoDB", "bootstrap"],
       image: "/assets/dp.jpg",
       liveUrl: "https://multiverse-rho.vercel.app/",
@@ -27,8 +27,7 @@ const Projects = () => {
     },
     {
       title: "CURD AND REACT LEAFLET MAP",
-      description:
-"Here I develop a line graph and then react leaflet map.",
+      description: "Here I develop a line graph and then react leaflet map.",
       tech: ["React", "Leaflet", "netlify", "TailwindCSS"],
       image: "/assets/map.jpg",
       liveUrl: "https://taiyo.netlify.app/",
@@ -39,7 +38,7 @@ const Projects = () => {
       title: "Dashboard Application",
       description:
         "A real-time dashboard application that visualizes data using charts and graphs. ",
-      tech: ["React", "Chart.js", "CSS","TailwindCSS"],
+      tech: ["React", "Chart.js", "CSS", "TailwindCSS"],
       image: "/assets/dashboard.png",
       liveUrl: "https://flourishing-gumption-8b4bc2.netlify.app/",
       githubUrl: "#",
@@ -77,18 +76,19 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-             <ShinyText 
-               color="#b00020"
-               shineColor="#f58a8a"
-               text=" Portfolio"
-               className="text-primary font-medium text-sm tracking-wider uppercase"
-              />
-         
+          <ShinyText
+            color="#b00020"
+            shineColor="#f58a8a"
+            text=" Portfolio"
+            className="text-primary font-medium text-sm tracking-wider uppercase"
+          />
+
           <h2 className="text-3xl md:text-4xl font-display font-bold mt-4">
             Featured Projects
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Real-world applications built with modern technologies and best practices.
+            Real-world applications built with modern technologies and best
+            practices.
           </p>
         </motion.div>
 
@@ -111,7 +111,7 @@ const Projects = () => {
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card/90 to-transparent" />
-                
+
                 {/* Quick links overlay */}
                 <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
@@ -159,7 +159,10 @@ const Projects = () => {
                 </div>
 
                 {/* View project button */}
-                <Button variant="ghost" className="group/btn p-0 h-auto font-medium hover:bg-transparent">
+                <Button
+                  variant="ghost"
+                  className="group/btn p-0 h-auto font-medium hover:bg-transparent"
+                >
                   View Project
                   <ArrowUpRight className="ml-1 h-4 w-4 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
                 </Button>
@@ -167,7 +170,7 @@ const Projects = () => {
             </motion.article>
           ))}
         </div>
-{/* 
+        {/* 
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

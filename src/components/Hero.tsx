@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Hero = () => {
