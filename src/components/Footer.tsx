@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Twitter, Heart } from "lucide-react";
+import RotatingText from "./ui/RotatingText ";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -21,9 +22,29 @@ const Footer = () => {
             viewport={{ once: true }}
             className="text-center md:text-left"
           >
-            <a href="#" className="font-display font-bold text-xl hover:text-primary transition-colors">
+            <RotatingText
+              texts={[
+                "PK Portfolio",
+                "PK Portfolio",
+                "PK Portfolio",
+                "PK Portfolio",
+              ]}
+              mainClassName="flex items-center glass-card h-11 text-primary font-bold rounded-md px-8 border-border hover:bg-secondary hover:text-primary"
+              staggerFrom={"last"}
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              exit={{ y: "-120%" }}
+              staggerDuration={0.025}
+              splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+              transition={{ type: "spring", damping: 30, stiffness: 400 }}
+              rotationInterval={2000}
+            />
+            {/* <a
+              href="#"
+              className="font-display font-bold text-xl hover:text-primary transition-colors"
+            >
               <span className="text-gradient">pk</span>Portfolio
-            </a>
+            </a> */}
             <p className="text-sm text-muted-foreground mt-2">
               © {currentYear} All rights reserved.
             </p>
@@ -37,7 +58,8 @@ const Footer = () => {
             transition={{ delay: 0.1 }}
             className="flex items-center gap-2 text-sm text-muted-foreground"
           >
-            Built with <Heart className="h-4 w-4 text-red-500 fill-red-500" /> and modern tech
+            Built with <Heart className="h-4 w-4 text-red-500 fill-red-500" />{" "}
+            and modern tech
           </motion.p>
 
           {/* Social Links */}
