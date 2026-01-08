@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Sun, Moon } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
+import ShinyText from "./ui/ShinyText";
+import RotatingText from "../components/ui/RotatingText ";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -51,7 +53,11 @@ const Navbar = () => {
             href="#"
             className="font-display font-bold text-xl hover:text-primary transition-colors"
           >
-            <img src="/assets/logo.png" alt="Logo" className="h-fit w-[30px] md:w-[50px]" />
+            <img
+              src="/assets/logo.png"
+              alt="Logo"
+              className="h-fit w-[30px] md:w-[50px]"
+            />
           </a>
 
           {/* Desktop Navigation */}
@@ -62,7 +68,12 @@ const Navbar = () => {
                 href={item.href}
                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
               >
-                {item.label}
+                <ShinyText
+                  text={item.label}
+                  color="#b5b5b5"
+                  shineColor="#ffffff"
+                />
+                {/* {item.label} */}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
@@ -84,12 +95,18 @@ const Navbar = () => {
               )}
             </Button> */}
 
-            <Button
-              variant="default"
-              className="hidden sm:inline-flex bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity"
-            >
-              Hire Me
-            </Button>
+            <RotatingText
+              texts={["Hire Me", "Hire Me", "Hire Me", "Hire Me"]}
+              mainClassName="hidden sm:inline-flex px-2 sm:px-2 md:px-3 font-medium bg-gradient-primary text-primary-foreground overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-sm"
+              staggerFrom={"last"}
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              exit={{ y: "-120%" }}
+              staggerDuration={0.025}
+              splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+              transition={{ type: "spring", damping: 30, stiffness: 400 }}
+              rotationInterval={2000}
+            />
 
             <Button
               variant="ghost"

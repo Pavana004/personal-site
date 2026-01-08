@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import ShinyText from "./ui/ShinyText";
+import ScrollVelocity from "../components/ui/ScrollVelocity";
 
 const Skills = () => {
   const skillCategories = [
@@ -11,7 +12,6 @@ const Skills = () => {
         { name: "TypeScript", level: 50 },
         { name: "Tailwind CSS", level: 95 },
         { name: "Framer Motion", level: 85 },
-      
       ],
     },
     {
@@ -22,8 +22,6 @@ const Skills = () => {
         { name: "REST APIs", level: 60 },
         { name: "Mongoose", level: 50 },
         { name: "LangChain", level: 30 },
-       
-      
       ],
     },
     {
@@ -40,14 +38,23 @@ const Skills = () => {
       skills: [
         { name: "Git", level: 70 },
         { name: "Docker", level: 20 },
-        { name: "CI/CD", level: 50 },,
+        { name: "CI/CD", level: 50 },
         { name: "Figma", level: 50 },
       ],
     },
   ];
 
   return (
-    <section id="skills" className="py-24 ">
+    <section id="skills" className=" relative py-24 overflow-hidden ">
+      <div className="absolute bottom-0 left-0 w-full -translate-y-1/2 pointer-events-none">
+        <ScrollVelocity
+          texts={[
+            "MERN DEVELOPER . FULLSTACK DEVELOPER . JAVASCRIPT . NEXT.JS",
+          ]}
+          velocity={10}
+          className="opacity-10 "
+        />
+      </div>
       <div className="container px-6">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -56,30 +63,42 @@ const Skills = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-           <ShinyText 
-               color="#b00020"
-               shineColor="#f58a8a"
-               text="Technical Skills"
-               className="text-primary font-medium text-sm tracking-wider uppercase"
-              />
-         
+          <ShinyText
+            color="#b00020"
+            shineColor="#f58a8a"
+            text="Technical Skills"
+            className="text-primary font-medium text-sm tracking-wider uppercase"
+          />
+
           <h2 className="text-3xl md:text-4xl font-display font-bold mt-4">
             My Tech Stack
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            A comprehensive toolkit for building modern, scalable web applications from front to back.
+            A comprehensive toolkit for building modern, scalable web
+            applications from front to back.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto cursor-grab">
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
               key={category.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: categoryIndex * 0.1, duration: 0.5 }}
-              className="p-6 rounded-xl glass-card "
+              drag
+              dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
+              dragElastic={0.2}
+              dragMomentum={false}
+              whileHover={{ scale: 1.1 }}
+              transition={{
+                delay: categoryIndex * 0.1,
+                duration: 0.5,
+                type: "spring",
+                stiffness: 200,
+                damping: 10,
+              }}
+              className="p-6 rounded-xl glass-card  "
             >
               <h3 className="font-display font-semibold text-lg mb-6 text-gradient">
                 {category.title}
@@ -87,22 +106,31 @@ const Skills = () => {
               <div className="space-y-4">
                 {category.skills.map((skill, skillIndex) => (
                   <motion.div
-                    key={skill.name}
+                    key={skill?.name}
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    transition={{ delay: categoryIndex * 0.1 + skillIndex * 0.05, duration: 0.4 }}
+                    transition={{
+                      delay: categoryIndex * 0.1 + skillIndex * 0.05,
+                      duration: 0.4,
+                    }}
                   >
                     <div className="flex justify-between text-sm mb-1">
-                      <span className="font-medium">{skill.name}</span>
-                      <span className="text-muted-foreground">{skill.level}%</span>
+                      <span className="font-medium">{skill?.name}</span>
+                      <span className="text-muted-foreground">
+                        {skill?.level}%
+                      </span>
                     </div>
                     <div className="h-1.5 rounded-full bg-secondary overflow-hidden">
                       <motion.div
                         initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
+                        whileInView={{ width: `${skill?.level}%` }}
                         viewport={{ once: true }}
-                        transition={{ delay: categoryIndex * 0.1 + skillIndex * 0.05 + 0.2, duration: 0.8, ease: "easeOut" }}
+                        transition={{
+                          delay: categoryIndex * 0.1 + skillIndex * 0.05 + 0.2,
+                          duration: 0.8,
+                          ease: "easeOut",
+                        }}
                         className="h-full rounded-full bg-gradient-primary"
                       />
                     </div>
