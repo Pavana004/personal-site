@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Briefcase, Calendar } from "lucide-react";
+import ShinyText from "./ui/ShinyText";
 
 const Experience = () => {
   const experiences = [
@@ -62,9 +63,14 @@ const Experience = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-medium text-sm tracking-wider uppercase">
-            Career Journey
-          </span>
+            <ShinyText 
+               color="#b00020"
+               shineColor="#f58a8a"
+               text="Career Journey"
+               className="text-primary font-medium text-sm tracking-wider uppercase"
+              />
+          
+         
           <h2 className="text-3xl md:text-4xl font-display font-bold mt-4">
             Work Experience
           </h2>
