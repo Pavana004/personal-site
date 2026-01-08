@@ -8,7 +8,7 @@ const Projects = () => {
     {
       title: "BHB -startup website",
       description:
-        "BHB is a startup by myself, delivering modern web solutions designed to help businesses grow digitally",
+      "BHB is a startup by myself, delivering modern web solutions designed to help businesses grow digitally.",
       tech: ["Next.js", "TypeScript", "Tailwind CSS"],
       image: "/assets/bhb.png",
       liveUrl: "https://business-ncvh.vercel.app/",
@@ -47,8 +47,8 @@ const Projects = () => {
     {
       title: "Fleet Traking Dashboard Application",
       description:
-        "Here i develop Fleet Traking Dashboard Live vehicle Simulation web application ",
-      tech: ["React.js", "Leaflet", "CSS", "TailwindCSS"],
+        "Here i develop Fleet Traking Dashboard Live vehicle Simulation web application.",
+      tech: ["React.js", "Leaflet", "CSS","TailwindCSS"],
       image: "/assets/Live.png",
       liveUrl: "https://fleet-tracking-task-for-mapup.vercel.app/",
       githubUrl: "#",
