@@ -18,7 +18,7 @@ const About = () => {
     {
       icon: Globe,
       title: "SEO Expert",
-      description: "Building search-friendly apps that rank and convert.",
+      description: "Building search-friendly apps that rank and convert",
     },
     {
       icon: Lightbulb,
