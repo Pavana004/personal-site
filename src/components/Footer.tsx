@@ -51,7 +51,7 @@ const Footer = () => {
           </motion.div>
 
           {/* Built with love */}
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -60,7 +60,7 @@ const Footer = () => {
           >
             Built with <Heart className="h-4 w-4 text-red-500 fill-red-500" />{" "}
             and modern tech
-          </motion.p>
+          </motion.p> */}
 
           {/* Social Links */}
           {/* <motion.div

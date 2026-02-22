@@ -122,6 +122,7 @@ const Hero = () => {
             </a>
             <a
               href="pavana004@gmail.com"
+              target="_blank"
               className="p-3 rounded-full glass-card hover:bg-primary/10 transition-colors"
               aria-label="Email Contact"
             >
